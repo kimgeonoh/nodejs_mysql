@@ -1,0 +1,33 @@
+<%-include('header.ejs')%> 
+    
+
+    <h1> 문의받은 내용들 </h1>
+
+<table border=1>
+    <tr>
+        <th> idx</th>
+        <th> 성명</th>
+        <th> 연락처</th>
+        <th> 이메일</th>
+        <th> 문의내용 </th>
+        <th> 등록일</th>
+        <th> 삭제 </th>
+    </tr>
+
+    <% lists.forEach(function(item){ %> <!--item 개수만큼 반복-->
+    <tr>
+        <td> <%=item.idx%> </td>
+        <td> <%=item.name%> </td>
+        <td> <%=item.phone%> </td>
+        <td> <%=item.email%> </td>
+        <td> <%-item.memo.replaceAll("\n","<br>")%> </td> <!--엔터를 html에서 보여지는 것들을 전부 교체-->
+        <td> <%=item.regdate%> </td>
+        <td> <a href="/contactDelete?idx=<%=item.idx%>" onclick="return confirm('정말 삭제할까요?')">삭제</a></td>
+
+    </tr>
+
+    <% }) %> 
+
+</table>
+
+<%-include('footer.ejs')%>     

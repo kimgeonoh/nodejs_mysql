@@ -1,17 +1,19 @@
 # 기능정리
-1. 홈<br/>+express 정적파일 제공
+1. 홈
+   <br/>+express 정적파일 제공
 2. 프로필
 3. 찾아오시는 길
 4. 문의하기
       <br/>+문의사항 글 DB 저장
-        +이름, 연락처, 이메일, 내용
-          +특수기호 포함 기능
-      +문의사항 글 DB 삭제
+        <br/>+이름, 연락처, 이메일, 내용
+          <br/>+특수기호 포함 기능
+      <br/>+문의사항 글 DB 삭제
 5. 로그인 및 유지
 6. 로그아웃
 
 ## Service Flow
-웹 <-> planetscaler <-> local DB (mysql workbench)   *planetscaler? DB server (PHP,nodejs 로 id, password 확인) 
+웹 <-> planetscaler <-> local DB (mysql workbench)
+<br/>*planetscaler? DB server (PHP,nodejs 로 id, password 확인) 
 
 ## you need install package
 ```

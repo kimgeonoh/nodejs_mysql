@@ -11,11 +11,11 @@
 5. 로그인 및 유지
 6. 로그아웃
 
-# Service Flow
+## Service Flow
 웹 <-> planetscaler <-> local DB (mysql workbench)
 *planetscaler? DB server (PHP,nodejs 로 id, password 확인) 
 
-### you need install package
+## you need install package
 ```
 npm install nodejs
 npm install ejs
